@@ -1,7 +1,9 @@
+import initial from '../../data/data.json';
+
 const { createSlice } = require('@reduxjs/toolkit');
 
 const initialState = {
-  contacts: JSON.parse(localStorage.getItem('contacts')) ?? [],
+  contacts: initial,
   filter: '',
 };
 
